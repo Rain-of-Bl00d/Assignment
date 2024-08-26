@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+<style>
+    .background {
+    height: 100vh;
+    width: 100vw;
+}
+</style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="d-flex text-center flex-column justify-content-center align-items-cemter mt-5">
+            <table border="2px">
+                <tr>
+                    <td align="left" valign="top" height="100px" width="100px">A</td>
+                    <td rowspan="2" align="right" valign="top" height="200px" width="100px">C</td>
+                    <td colspan="2" rowspan="2" height="200px" width="200px">
+                        <table border="1px" align="center">
+                            <tr>
+                                <td height="50px" width="50px" align="center">K</td>
+                                <td rowspan="2" width="50px" height="100px" align="center" valign="top">N</td>
+                            </tr>
+                            <tr>
+                                <td height="50px" width="50px" align="center" valign="bottom">L</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top" height="100px" width="100px">B</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="left" valign="bottom" height="100px" width="200px">D</td>
+                    <td rowspan="3" align="right" valign="bottom" height="300px" width="100px">H</td>
+                    <td align="right" valign="bottom" height="100px" width="100px">J</td>
+                </tr>
+                <tr>
+                    <td align="center" height="100px" width="100px">E</td>
+                    <td rowspan="2" align="right" height="200px" width="100px">G</td>
+                    <td rowspan="2" align="right" valign="top" height="200px" width="100px">I</td>
+                </tr>
+                <tr>
+                    <td height="100px" width="100px">F</td>
+                </tr>
+            </table>
+            <p class="btn btn-primary" style="text-align: -webkit-left; margin-top: 20px;">
+                <a href="CV.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">CV</a>
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

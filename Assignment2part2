@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="netflix.css">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+<style>
+    .food-munch-logo {
+        height: 50px;
+    }
+    
+    #navItem1 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    #navItem2 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    #navItem3 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    #navItem4 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    #navItem5 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    #navItem6 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    #navItem7 {
+        color: black;
+        font-size: 20px;
+    }
+    
+    #navItem8 {
+        color: black;
+        font-size: 20px;
+        margin-left: 30px;
+        font-weight: bold;
+    }
+    
+    .background-image {
+        background-image: url("https://c.pxhere.com/images/9e/60/d7f25846d85ae9fb490c9ba2ead7-1679506.jpg!d");
+        height: 90vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .background-image2 {
+        background-image: url("https://static.wixstatic.com/media/7cf795_9656f4104b9c42fa8f27a6db0b58ef0d~mv2.gif");
+        height: 90vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .img-pad {
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 100%;
+    }
+    
+    .background-m4 {
+        height: 90vh;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .app {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        /* Adjust width as needed */
+    }
+    
+    .content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        /* Ensure content doesn't overflow */
+    }
+    
+    .liquid-text {
+        color: aliceblue;
+        position: relative;
+        margin: 0;
+        padding: 10px;
+        font-size: 3em;
+        /* Adjust font size as needed */
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: liquid 2s ease-in-out infinite;
+    }
+    
+    @keyframes liquid {
+        0% {
+            background-position: -100% 0;
+        }
+    
+        50% {
+            background-position: 200% 0;
+        }
+    
+        100% {
+            background-position: -100% 0;
+        }
+    }
+    
+    .mac-m2 {
+        background-image: url(https://media.licdn.com/dms/image/C5622AQEeLvSqRbfcFg/feedshare-shrink_2048_1536/0/1673477940455?e=2147483647&v=beta&t=B81ef-AUeErfBNjSPH-zc8dK35HLvbjET3HPdTnVano);
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        width: 100%;
+    }
+    
+    .height-carosal {
+        height: 80vh;
+    }
+    
+    .image-mack {
+        height: 200px;
+        width: 400px;
+    }
+</style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mr-auto fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://cdn.dribbble.com/users/1161517/screenshots/7896076/media/24ae74ddb6c9eb7789ae3a189a6b30ae.gif" class="food-munch-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                    <i class="bi bi-search"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto ml-auto pl-5">
+                        <a class="nav-link active" id="navItem1" href="#wcuSection">
+                            Why Choose Us?
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-link" href="#exploreMenuSection" id="navItem2">Stor </a>
+                        <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Mac </a>
+                        <a class="nav-link" href="#followUsSection" id="navItem4">ipad</a>
+                        <a class="nav-link" href="#exploreMenuSection" id="navItem5">iphone</a>
+                        <a class="nav-link" href="#deliveryPaymentSection" id="navItem6">watch</a>
+                        <a class="nav-link" href="#followUsSection" id="navItem7">airpods</a>
+                        <a class="nav-link" href="#followUsSection" id="navItem8">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container-fluid background-image d-flex flex-column justify-content-center align-items-center">
+        <h1 style="color:white; font-size: 50px;">University Students</h1>
+        <h4 style="color:white; font-size: 30px;">Go Further with Mac</h4>
+        <button class="btn btn-primary">Learn More</button>
+    </div>
+    <div class="container background-image2 mt-3 d-flex flex-column justify-content-center align-items-center">
+        <h1 style="color:white; font-size: 50px;">Iphone 15 Pro Max</h1>
+        <h4 style="color:white; font-size: 30px;">Titanium . So Strong . So Light . So Pro</h4>
+        <button class="btn btn-primary">Learn More</button>
+    </div>
+    <div class="container">
+        <div class="row ">
+            <div class=" app col-12 col-md-6 text-center mt-3 d-flex flex-column justify-content-center align-items-center" style="background-image:url(https://www.apple.com/newsroom/videos/ipad-pro-magic-keyboard/posters/Apple-iPad-Pro-Magic-Keyboard-240507.jpg.large_2x.jpg);background-size: cover; background-position: center; height:60vh;">
+                <h1 style="color:white">Embrace the Power of M4</h1>
+                <button class="btn btn-primary">Learn More</button>
+            </div>
+            <div class="col-md-6 col-12 text-center background-m4 mt-3 d-flex flex-column justify-content-center align-items-center ml-auto" style="height: 60vh;">
+                <div style="height: 100%; width: 100%; margin-left: 10px; background-color: black;" class="mr-auto content d-flex flex-column justify-content-center align-items-center">
+                    <img style="height:100%; width:100%;" src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbookair-og-202402?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1707414684423">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mac-m2 mt-3 d-flex flex-column justify-content-center align-items-center">
+        <h1 style="color:white; font-size: 50px;">kelvin Romeo</h1>
+        <h4 style="color:white; font-size: 30px;">Feel the pro with Pro</h4>
+        <button class="btn btn-primary">Learn More</button>
+    </div>
+    <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner mt-3">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 height-carosal" src="https://dnm.nflximg.net/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVVb4fo_dVEt5Ak33ki86nXoRTRts-Qn80eQTXzaQYlbCvE6pO66OwiHRED6wP6Kv6MEwkaiExtFyhvYALVusrxAYYYzO3TL-KHEpsRYmEOXJyG23x9twSQfyBB2UPH763goLg.jpg?r=019" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 height-carosal" src="https://media.gqindia.com/wp-content/uploads/2020/02/top-image-new1.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 height-carosal" src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/02/The-10-Best-Original-Netflix-Action-Movies-Ranked-According-To-Metacritic.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 height-carosal" src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2023/01/glass-onion-daniel-craig-pale-blue-eye-christian-bale-the-good-nurse-jessica-chastain-do-revenge-camil-mendes-viola-davis-from-ma-rainey-s.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid mt-3 mb-5">
+        <marquee>
+            <img class="image-mack ml-3" src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/11/Spirit-The-Stallion-of-The-Cimarron.jpg">
+            <img class="image-mack ml-3" src="https://hips.hearstapps.com/hmg-prod/images/best-animated-movies-01-the-bad-guys-1669747819.jpeg?crop=0.839xw:1.00xh;0.0814xw,0&resize=1200:*">
+            <img class="image-mack ml-3" src="https://elle.in/wp-content/uploads/2021/04/Untitled-design-2022-03-03T123534.222.png">
+            <img class="image-mack ml-3" src="https://www.bestmoviesbyfarr.com/static-assets/blobs/images/articles/background/2016/07/songoftheseabig.jpg">
+            <img class="image-mack ml-3" src="https://www.watchmojo.com/uploads/blipthumbs/Fi-M-Top10-Animated-Movies-of-the-1980s-480p30_480.jpg">
+            <img class="image-mack ml-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjy5_u7L7f7sY0xGd1c3kSsvU_PXHQVvjUvw&s">
+            <img class="image-mack ml-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQou8QmKEDLfcMvo0a9qrWgdIRwj0ZFZXP1-g&s">
+            <img class="image-mack ml-3" src="https://i.ytimg.com/vi/0BFijR479Hs/maxresdefault.jpg">
+            <img class="image-mack ml-3" src="https://assets.vogue.in/photos/5ce40b96b8031177018f4a9a/master/pass/All-the-top-kids-movies-releasing-in-2018.jpg">
+            <img class="image-mack ml-3" src="https://assets1.ignimgs.com/2018/06/28/25disneyanimated-blogroll-1530224402897_160w.jpg?width=1280">
+            <img class="image-mack ml-3" src="https://ew.com/thmb/QHfsCYEXYCi_H6Rz1Mb0W4VZ1q8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/NETFLIX_THE-MITCHELLS-VS-THE-MACHINES-70911311ec094dc0ae168c888cfeb3e6.jpg">
+            <img class="image-mack ml-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVOsNxGvaJvJSx8rgtyfblC5UI93BP7h-I3Q&s">
+        </marquee>
+    </div>
+    <br>
+    <div class="contianer-fluid mt-5" style="border-color:grey; border-top-style:solid;">
+        <div class="row">
+            <div class="col-12 text-center ">
+                <p>◊◊◊ Qualified Purchasers can receive Promotion Savings when they purchase an Eligible Product with Promotion Product at a Qualifying Location. Only one Promotion Product per Eligible Product per Qualified Purchaser. Offer subject to availability. Subject to terms and conditions here.
+                    1GB = 1 billion bytes and 1TB = 1 trillion bytes; actual formatted capacity less.
+                    Screen size is measured diagonally. The displays on the 13″ MacBook Air and 15″ MacBook Air have rounded corners at the top. When measured as a standard rectangular shape, the screens are 34.46 cm (13.6″) and 38.91 cm (15.3″) diagonally (actual viewable area is less).
+                    Testing conducted by Apple in April and May 2023 using production 13″ MacBook Air systems and pre-production 15″ MacBook Air systems all with Apple M2, 8-core CPU, 10-core GPU, 24GB of RAM and 2TB SSD, as well as production 1.2GHz quad-core Intel Core i7–based MacBook Air systems with Intel Iris Plus Graphics, 16GB of RAM and 2TB SSD. Final Cut Pro 10.6.6 tested using a complex 2‑minute project with 4K ProRes 422 media. Performance tests are conducted using specific computer systems and reflect the approximate performance of MacBook Air.
+                    Testing conducted by Apple in January 2024 using pre-production 15-inch and 13-inch MacBook Air systems with Apple M3, 8-core CPU, 10-core GPU and 24GB of RAM, as well as production 1.2GHz quad-core Intel Core i7-based MacBook Air systems with Intel Iris Plus Graphics and 16GB of RAM, all configured with 2TB SSD. Final Cut Pro 10.7.1 tested using a complex 1‑minute project with 4K ProRes 422 media. Performance tests are conducted using specific computer systems and reflect the approximate performance of MacBook Air.
+                    * Mac, iPad, and Apple Watch trade-in is available only in-store in India. Apple Retail Online in India does not offer trade-in for Mac, iPad, and Apple Watch. Trade‑in values will vary based on the condition, year and configuration of your eligible trade‑in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit. Trade‑in value may be applied towards a qualifying new device purchase. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade‑in requires presentation of a valid photo ID (local law may require saving this information). Some stores may have additional requirements. Apple or its trade‑in partners reserve the right to refuse, cancel or limit the quantity of any trade‑in transaction for any reason. More details are available from Apple’s trade‑in partner for trade‑in and recycling of eligible devices. Restrictions and limitations may apply.
+                    ◊◊ Monthly pricing is after purchase using EMI with qualifying cards at 15% pa over a 24 month tenure. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your bank, subject to your bank’s terms and conditions.
+                    Representative example:
+                    Based on purchase of ₹79900.00. Total amount payable ₹92978.00 paid over 24 months as 24 monthly payments of ₹3874.00 at an interest rate of 15% pa. Total interest paid to bank: ₹13078.00.
+                    § No Cost EMI is available with the purchase of an eligible product made using qualifying cards on 3 or 6 month tenures from most leading banks. Until 6 August 2024, No Cost EMI is available with the purchase of an eligible iPhone made using qualifying cards on 3, 6, 9, 12, 18, 24 month tenures from most leadings banks. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your bank, subject to your bank's terms and conditions. Minimum order spend applies as per your card issuing bank threshold. Offer cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your card issuing bank. Offer may be revised or withdrawn at any time without any prior notice. Terms apply.
+                    Representative examples:
+                    Based on a 6 month tenure. ₹79900.00 total cost includes 15% pa and No Cost EMI savings of ₹3380.00, paid over 6 months as 6 monthly payments of ₹13317.00.
+                    Based off a 24 month tenure. ₹79900.00 total cost includes 15% pa and No Cost EMI savings of ₹11242.00, paid over 24 months as 24 monthly payments of ₹3329.00.
+                    ‡ Listed pricing is Maximum Retail Price (inclusive of all taxes).
+                    We use your location to show you delivery options faster. We found your location using your IP address or because you entered it during a previous visit to Apple.
+                    Apple
+                    Mac MacBook Air Buy MacBook Air
+                    Shop and Learn
+                    <br>
+                    Store
+                    <br>
+                    Mac
+                    <br>
+                    iPad
+                    <br>
+                    iPhone
+                    <br>
+                    Watch
+                    <br>
+                    AirPods
+                    <br>
+                    TV & Home
+                    <br>
+                    AirTag
+                    <br>
+                    Accessories
+                    <br>
+                    Gift Cards
+                    <br>
+                    Apple Wallet
+                    <br>
+                    Wallet
+                    <br>
+                    Account
+                    <br>
+                    Manage Your Apple ID
+                    <br>
+                    Apple Store Account
+                    <br>
+                    iCloud.com
+                    <br>
+                    Entertainment
+                    <br>
+                    Apple One
+                    <br>
+                    Apple TV+
+                    <br>
+                    Apple Music<br>
+                    Apple Arcade<br>
+                    Apple Podcasts<br>
+                    Apple Books<br>
+                    App Store<br>
+                    Apple Store
+                    <br>
+                    Find a Store<br>
+                    Genius Bar<br>
+                    Today at Apple<br>
+                    Apple Summer Camp<br>
+                    Ways to Buy<br>
+                    Apple Trade In<br>
+                    Recycling Programme<br>
+                    Order Status<br>
+                    Shopping Help<br>
+                    For Business<br>
+                    <br>
+                    Apple and Business<br>
+                    For Education<br>
+                    <br>
+                    Apple and Education<br>
+                    Shop for Education<br>
+                    Shop for University<br>
+                    For Healthcare<br>
+                    <br>
+                    Apple in Healthcare
+                    Health on Apple Watch
+                    Apple Values
+                    <br>
+                    Accessibility
+                    Environment
+                    Privacy
+                    Supply Chain
+                    About Apple
+                    <br>
+                    Newsroom
+                    Apple Leadership
+                    Career Opportunities
+                    Investors
+                    Ethics & Compliance
+                    Events<br>
+                    Contact Apple<br>
+                    More ways to shop: Find an Apple Store or other retailer near you. Or call 000800 040 1966.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+</body>
+
+</html>
