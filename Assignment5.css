@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.main_container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.login_form {
+    height: 60%;
+    width: 70%;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    border-width: 1px;
+}
+
+.inputNumber {
+    width: 80%;
+    height: 50px;
+    font-weight: bold;
+}
