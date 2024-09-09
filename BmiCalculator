@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-container d-flex justify-content-center align-items-center">
+        <div class="mainCard d-flex flex-column">
+            <div class="d-flex flex-column justify-content-center align-items-center ">
+                <input id="weightInput" placeholder="Enter Weight In Kg" class="inputcontainer mt-5 text-center" type="number">
+                <input id="heightInput" placeholder="Enter Height In Meter" class="inputcontainer mt-5 text-center" type="number">
+            </div>
+            <div style="width:100%" class="d-flex justify-content-center mt-5">
+                <button class="btn btn-primary" onclick="calculateFunc()">Calculate</button>
+                <button class="btn btn-primary ml-2" onclick="resetFunct()">Reset</button>
+            </div>
+            <hr class="horizontalLine mt-3">
+            <div class=" dialClass d-flex justify-content-center align-items-center mt-3">
+                <div class="btn_class mt-auto" id="gaugeId"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
