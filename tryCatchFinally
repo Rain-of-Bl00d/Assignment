@@ -1,0 +1,41 @@
+try {
+  let a = 10;
+  let b = 0;
+
+  function division(dividend = a, divisor = b) {
+    if (divisor === 0) {
+      throw new Error("Division by zero is not allowed.");
+    }
+    let result = dividend / divisor;
+    return result;
+  }
+
+  // Call the division function to test
+  let result = division();
+  console.log("Result:", result);
+} catch (e) {
+  console.error("Error:", e.message);
+} finally {
+  console.log("Operation Done");
+}
+
+try {
+  let a = 10;
+  let b = 2;
+
+  function division(dividend = a, divisor = b) {
+    if (divisor === 0) {
+      throw new Error("Division by zero is not allowed.");
+    }
+    let result = dividend / divisor;
+    return result;
+  }
+
+  // Call the division function to test
+  let result = division();
+  console.log("Result:", result);
+} catch (e) {
+  console.error("Error:", e.message);
+} finally {
+  console.log("Operation Done");
+}
