@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Listeners</title>
+    <style>
+        #hoverDiv {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px;
+        }
+
+        #keyDiv {
+            width: 300px;
+            height: 50px;
+            border: 1px solid black;
+            margin: 20px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        #focusInput {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>JavaScript Event Listeners Demo</h1>
+
+<button id="clickButton">Click Me</button>
+
+<div id="hoverDiv">Hover Over Me</div>
+<input type="text" id="focusInput" placeholder="Focus on me" />
+<div id="keyDiv">Press any key</div>
+<div id="scrollDiv" style="height: 100px; overflow-y: scroll; border: 1px solid black;">
+    <p>Scroll me!</p>
+    <p>Some more text here...</p>
+    <p>More text below...</p>
+</div>
+<form id="submitForm">
+    <input type="text" placeholder="Enter name" required />
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    document.getElementById('clickButton').addEventListener('click', function() {
+        alert('Button Clicked!');
+    });
+    const hoverDiv = document.getElementById('hoverDiv');
+    hoverDiv.addEventListener('mouseover', function() {
+        hoverDiv.style.backgroundColor = 'lightgreen';
+    });
+    hoverDiv.addEventListener('mouseout', function() {
+        hoverDiv.style.backgroundColor = 'lightblue';
+    });
+    document.addEventListener('keydown', function(event) {
+        document.getElementById('keyDiv').textContent = 'Key Pressed: ' + event.key;
+    });
+
+    const focusInput = document.getElementById('focusInput');
+    focusInput.addEventListener('focus', function() {
+        focusInput.style.border = '2px solid green';
+    });
+    focusInput.addEventListener('blur', function() {
+        focusInput.style.border = '1px solid gray';
+    });
+
+    const scrollDiv = document.getElementById('scrollDiv');
+    scrollDiv.addEventListener('scroll', function() {
+        console.log('Scrolled! Scroll position: ' + scrollDiv.scrollTop);
+    });
+    const form = document.getElementById('submitForm');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Form Submitted!');
+    });
+    window.addEventListener('resize', function() {
+        console.log('Window resized. New dimensions: ' + window.innerWidth + 'x' + window.innerHeight);
+    });
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+        alert('Right-click is disabled!');
+    });
+    document.getElementById('clickButton').addEventListener('dblclick', function() {
+        alert('Button Double Clicked!');
+    });
+</script>
+
+</body>
+</html>
